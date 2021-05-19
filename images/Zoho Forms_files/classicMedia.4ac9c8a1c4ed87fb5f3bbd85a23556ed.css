@@ -1,0 +1,36 @@
+/* $Id: $ */
+@charset "UTF-8";
+/* CSS Document */
+
+
+@media only screen and (min-width:1024px) {
+	.backgroundSecBg { 
+		padding:30px 10px;
+	}
+	.tempFrmWrapper {
+		padding:10px 30px;
+	}
+	.pBarWrapper { 
+		padding:20px 30px 10px !important;
+	}
+}
+
+@media only screen and (min-width: 480px) and (max-width:768px) {
+	.fmFooter { 
+		padding:25px 30px;
+	}
+	
+	.pBarWrapper {
+		padding:20px 30px 10px;
+	}
+}
+
+@media only screen and (max-width:480px) {	
+	.fmFooter { 
+		padding:25px 30px;
+	}
+
+	.pBarWrapper { 
+		padding:20px 30px 10px;
+	}
+}

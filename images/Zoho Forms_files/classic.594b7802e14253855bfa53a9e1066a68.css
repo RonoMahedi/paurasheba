@@ -1,0 +1,646 @@
+/* $Id: $ */
+@charset "UTF-8";
+/* CSS Document */
+
+/*defaultTheme starts here*/
+body { 
+	font-size: 13px; 
+	font-family: "Arimo", sans-serif !important;  
+	letter-spacing: 0.3px;
+}
+::selection {
+	background:#daf8ee;
+}
+.tempFrmWrapper .tempContDiv, .form_sBox select {
+    font-family: "Arimo", sans-serif !important;
+}
+input[type="text"], input[type="radio"], input[type="checkbox"], isindex, textarea, .pdfTextArea, input[type="password"], button {
+	font-family: "Arimo", sans-serif !important;
+	letter-spacing: 0.3px;
+}
+.backgroundBg {
+	background: #dcdcdc;
+}
+.backgroundSecBg {
+	padding:2% 5px;
+	margin: 0;
+}
+.templateWidth {
+	margin: 0 auto;
+}
+.topContainer {
+	display: none;
+}
+.btmContainer {
+	display: none;
+}
+.templateWrapper {
+	background: #fff;
+	box-shadow: 0 0 0 .5px rgba(0,20,40,.1), 0 2px 8px 0 rgba(50,55,90,.2);
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+.tempHeadContBdr {
+	background: #fff;
+	border-bottom: 1px solid #EAEAEA;
+	margin: 0;
+	padding:20px 30px;
+	-webkit-border-radius: 3px 3px 0 0;
+	-moz-border-radius: 3px 3px 0 0;
+	border-radius:3px 3px 0 0;
+}
+.tempHeadContBdr .frmTitle {
+	color: #222;
+	margin: 0;
+	padding: 0;
+	font-size: 2em;
+}
+.tempHeadContBdr .frmDesc {
+	color: #7c7c7c;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+	padding-top: 5px;
+}
+.tempFrmWrapper{
+	padding: 10px 30px;
+}
+.tempFrmWrapper .labelName {
+	font-size: 15px;
+	color: #222;
+}
+.tempContDiv input[type="text"], .tempContDiv textarea, .tempContDiv .pdfTextArea, .mSelect select {
+	background: #fff;
+	border: 1px solid #d2d2d2;
+	-webkit-border-radius:3px;
+	-moz-border-radius:3px;
+	border-radius:3px;
+	padding: 8px 5px 8px 5px;
+	font-size: 14px;
+}
+.signContainer canvas {
+	border: 1px solid #d6d8d9;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+}
+.tempContDiv input[type="text"]:hover, .tempContDiv textarea:hover, .mSelect select:hover, .tempContDiv input[type="file"]:hover, .form_sBox:hover, .signContainer .signArea:hover, .signContainer canvas:hover {
+	border: 1px solid #a5a5a5 !important;
+	outline: none;
+}
+
+.tempContDiv input[type="text"]:focus, .tempContDiv textarea:focus, .mSelect select:focus, .tempContDiv input[type="file"]:focus, .form_sBox:focus, .signContainer .signArea:focus, .signContainer canvas:focus {
+	border: 1px solid #24A68A !important;
+	outline: none;
+}
+
+
+
+.subContWrap {
+	margin:0px;
+	margin-bottom: 0;
+}
+.phone .tempContDiv label, .date .tempContDiv label, .time .tempContDiv label, .address .tempContDiv label, .name .tempContDiv span label {
+	color: #7c7c7c;
+	font-size: 13px !important;
+}
+.date .tempContDiv .calendarIcon {
+	margin-top: 5px;
+}
+.fmFooter {
+	text-align: center;
+	overflow: hidden;
+	padding: 25px 30px;
+}
+.fmSmtButton {
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	padding:10px 40px 10px 40px;
+	font-weight: 400;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	font-size: 15px;
+	font-family: "Arimo", sans-serif;
+}
+.submitColor {
+	color: #fff;
+    border: 1px solid;
+    border-color:#24A68A;
+    background:#24A68A;
+    -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+}
+.submitColor:hover {
+    background: #24A68A;
+}
+.saveColor, .reviewBtn {
+	color: #fff;
+	border: 1px solid;
+	border-color: #494949;
+	background: #494949;
+	-moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+	-webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+	text-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+}
+.saveColor:hover, .reviewBtn:hover {
+	background: #494949;
+}
+.cancelColor {
+	color: #444;
+	border: solid 1px #ccc;
+	background: #eaeaea;
+	background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(#F4F4F4));
+	background: -moz-linear-gradient(top, #FFFFFF, #F4F4F4);
+ 	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFF', endColorstr='#F4F4F4');
+	-moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+	-webkit-box-shadow: 0 2px #fff inset;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+	text-shadow: 0px 2px 0px #fff;
+}
+.cancelColor:hover {
+	border: 1px solid #aaa;
+	background: #fff;
+	background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(#F4F4F4));
+	background: -moz-linear-gradient(top, #FFFFFF, #F4F4F4);
+ 	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFF', endColorstr='#F4F4F4');
+}
+.brandingContainer {
+	text-align: right;
+	color: #666;
+	border-top: 1px dashed #ccc;
+	margin-top: 10px;
+	padding: 15px;
+}
+.form_sBox {
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	border: 1px solid #d6d8d9;
+	height: 34px;
+}
+.fmFooter .next_previous {
+	padding: 10px 30px 10px 30px;
+	background: #ebedef;
+	border: 1px solid #c9c9c9;
+	color: #222;
+	padding: 10px 7px;
+	font-size: 15px;
+	padding: 10px 35px;
+	min-height: 30px;
+	min-width: 75px;
+}
+.pageFotDef .prevAlign {
+	float: left;
+}
+.pageFotDef .alignNext {
+	float: right;
+}
+.pageFotDef .submitColor {
+	float: none;
+}
+.pBarWrapper{
+    margin-top: 20px !important;
+    padding: 20px 30px 10px;
+}
+.pBarWrapper .selected em.pNumber {
+	color: #fff;
+	border: 2px solid rgba(255,255,255,0);
+}
+.pBarWrapper .selected .pBar, .pBarWrapper .selected em.pNumber b {
+	background: #24A68A;
+}
+.pBarWrapper .currentPTab em.pNumber {
+	color: #fff;
+	border: 2px solid #24A68A;
+}
+.bar .currentPTab .pArrow {
+	border-color: #24A68A transparent;
+}
+.form_sBox .customArrow {
+	right: 3px;
+	top: 5px;
+}
+.form_sBox select {
+	padding-top: 10px;
+	padding-bottom:10px;
+	padding-right:20px;
+}
+.commentBg {
+	background: #f4f4f4;
+}
+.commentBg .backgroundSecBg {
+	padding: 30px;
+}
+.signContainer .signArea, .tempContDiv input[type="file"], .mSelect select {
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	border: 1px solid #e5e5e5;
+}
+.subfrmWrapper-horizontal ul{
+    background: #f9f9f9;
+}
+.instruction{
+	color: #7c7c7c;
+	font-size: 13px !important;
+    font-style: normal;
+}
+.section{
+	padding: 10px 30px;
+}
+.section h2{
+	font-size: 18px;
+	border-bottom: 1px solid #d6d8d9;
+	font-family: "Arimo", sans-serif;
+    letter-spacing: 0.3px;
+}
+.uploadContainer::before{ 
+	border-color: #d6d8d9; 
+}
+.slider .tempContDiv .ui-slider .ui-slider-range {
+    background: #24a68a;
+    border: 1px solid #24a68a;
+}
+.mSelect select[multiple]:focus option:checked {
+  background: #24A68B linear-gradient(0deg, #24A68B 0%, #24A68B 100%);
+}
+.uploadContainer:hover::before, .uploadContainer:focus::before, .uploadContainer:active::before{ 
+	border-color: #a5a5a5;
+}
+.themePopupInnerCont .backgroundSecBg {
+	padding:30px;
+}
+.subfrmWrapper-horizontal {
+    overflow-y: hidden;
+	border-color: #d6d8d9;
+    border-radius: 3px;
+}
+.signContainer a{ 
+	color: #24A68A;
+}
+.uploadContainer .floatText a{	
+	color: #24A68A;
+	font-family: "Arimo", sans-serif !important;
+}
+.signContainer canvas:hover, .signContainer canvas:focus{
+	border-color:#24A68A;
+	outline: none;
+}	
+/* Radio Button */
+.customRadioBtn input[type="radio"]:not(:checked) {
+    position: absolute;
+    opacity: 0;
+}
+.customRadioBtn .cusChoiceSpan .checker {
+    display: none;
+}
+.customRadioBtn .cusChoiceSpan{
+    list-style: none;
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+}
+.customRadioBtn  input[type="radio"]:checked, .customRadioBtn  input[type="radio"]:not(:checked) {
+    position: absolute;
+    opacity: 0;
+}
+.customRadioBtn .cusChoiceSpan .cusChoiceLabel {
+    display: block;
+    cursor: pointer;
+    margin:0;
+}
+.customRadioBtn  input[type="radio"] + .cusChoiceLabel:before {
+    content: '';
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    vertical-align: -0.25em;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+    border: 1px solid #9e9e9e;
+    transition: 0.5s ease all;
+    position: relative;
+    float: left;
+    margin: 3px 0 0 0;
+}
+.customRadioBtn  input[type="radio"]:checked + .cusChoiceLabel:after {
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 10px;
+    background: #09ad7e;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    border-width: 1px;
+    left: 0;
+    top: 0;
+    margin: 6px 0 0 3px;
+}
+.customCheckBox input[type="checkbox"]:not(:checked) {
+    position: absolute;
+    left: 0;
+    opacity: 0;
+}
+.customRadioBtn .cusChoiceEm {
+    display: block;
+    padding-left: .6em;
+    vertical-align: middle;
+    display: table-cell;
+}
+.fieldDisabled .customRadioBtn input[type="radio"] + .cusChoiceLabel::before {
+     opacity: 0.5;
+}
+.fieldDisabled .customRadioBtn input[type="radio"]:checked + .cusChoiceLabel::after {
+ 	opacity: 0.5;
+}
+/* CheckBox */
+.customCheckBox .checker {
+    display: none;
+}
+.customCheckBox .cusChoiceSpan{
+	list-style: none;
+	display: inline-block !important;
+	position: relative;
+}
+.customCheckBox .cusChoiceLabel {
+	display: block;
+	cursor: pointer;
+	margin: 0 !important;
+	position: relative;
+}
+.customCheckBox input[type="checkbox"] + .cusChoiceLabel:before {
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    vertical-align: -0.25em;
+    border-radius: 2px;
+    border: 1px solid #9e9e9e;
+    margin: 2px 0 0 0;
+    top: 0;
+    -webkit-transition: 0.5s ease all;
+    -moz-transition: 0.5s ease all;
+    -o-transition: 0.5s ease all;
+    -ms-transition: 0.5s ease all;
+    transition: 0.5s ease all;
+    float: left;
+}
+.customCheckBox input[type="checkbox"]:checked + .cusChoiceLabel:after {
+	display: inline-block;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    height: 8px;
+    width: 3px;
+    margin-bottom: 0;
+    border-bottom: 2px solid #24A68A;
+    border-right: 2px solid #24A68A;
+    content: "";
+    position: absolute;
+    left: 7px !important;
+    -webkit-transition: 0.5s ease all;
+    -moz-transition: 0.5s ease all;
+    -o-transition: 0.5s ease all;
+    -ms-transition: 0.5s ease all;
+    transition: 0.5s ease all;
+	top: 5px;
+}
+.customCheckBox input[type="checkbox"]:checked, .customCheckBox input[type="checkbox"]:not(:checked) {
+	position: absolute;
+	opacity: 0;
+}
+.customCheckBox .cusChoiceEm {
+	display: table-cell;
+	padding-left: .6em;
+}
+.fieldDisabled .customCheckBox input[type="checkbox"] + .cusChoiceLabel:before {
+	opacity: 0.5;
+}
+.fieldDisabled .customCheckBox input[type="checkbox"]:checked + .cusChoiceLabel:after {
+	opacity: 0.4;
+}
+.decesion .cusChoiceSpanWrap {
+    display: table-cell;
+    padding-left: .6em;
+}
+.decesion .cusChoiceLabel {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
+.matrix_choice .customRadioBtn label, .matrix_choice .customCheckBox label {
+    display: inline-block;
+    position: relative;
+}
+.addedImgWrapper.customRadioBtn, .addedImgWrapper.customRadioBtn .cusChoiceLabel, .addedImgWrapper.customCheckBox, .addedImgWrapper.customCheckBox .cusChoiceLabel {
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    float: none;
+    margin-top: 5px !important;
+}
+.termsAccept .descFld {
+    margin-left: 26px;
+}
+.termsWrapper .termsAccept.customCheckBox label::before {
+	margin-top : 0px !important;
+}
+.termsAccept.customCheckBox input[type="checkbox"]:checked + .cusChoiceLabel:after {
+	top : 3px;
+}
+.rtlWrapper .termsAccept.customCheckBox input[type="checkbox"]:checked + .cusChoiceLabel:after {
+	top : 3px !important;
+}
+/* RTl radio check box starts here  */
+.rtlWrapper .zfradio .tempContDiv .cusChoiceSpan .cusChoiceLabel {
+    float: right;
+    margin-left: 12px !important;
+    margin-right: 0px !important;
+}
+.rtlWrapper .zfradio .customRadioBtn .cusChoiceEm {
+    display: table;
+    padding: 0 .1em 0 .5em;
+    text-align: right;
+}
+.rtlWrapper .zfradio .customRadioBtn input[type="radio"] + .cusChoiceLabel::before {
+    margin: 3px 0 0 5px;
+        margin-right: 0px;
+        margin-left: 5px;
+}
+.rtlWrapper .zfradio .customRadioBtn input[type="radio"] + .cusChoiceLabel::after, .rtlWrapper  .customRadioBtn input[type="radio"] + .cusChoiceLabel::after {
+    right: 3px;
+    display: block;
+}
+.rtlWrapper .customRadioBtn input[type="radio"] + .cusChoiceLabel::before {
+    margin-left: 5px !important;
+    float: right;
+    margin-right: 0 !important;
+}
+.rtlWrapper .zfcheckbox .tempContDiv .cusChoiceSpan .cusChoiceLabel {
+    float: right;
+    margin-right: 0;
+}
+.rtlWrapper .customCheckBox input[type="checkbox"] + .cusChoiceLabel::before {
+    float: right;
+    margin-left: 0.35em;
+    margin-right: 0;
+}
+.rtlWrapper .customCheckBox .cusChoiceEm {
+    display: table !important;
+    padding: 0 .1em 0 0px;
+    text-align: right;
+}
+.rtlWrapper .customCheckBox input[type="checkbox"]:checked + .cusChoiceLabel::after {
+    right: 6px;
+    top: 5px;
+}
+.rtlWrapper .decesion. .customCheckBox {
+    text-align: right;
+}
+.rtlWrapper .decesion. .customCheckBox {
+    text-align: right;
+}
+.rtlWrapper .slider .tempContDiv .ui-widget-content{
+	background: #24a68a;
+	border: 1px solid #24a68a;
+}
+.rtlWrapper .zfradio .tempContDiv .customRadioBtn .cusChoiceSpan {
+     margin: 0 0 13px 0;
+}
+.rtlWrapper .zfcheckbox.sideBySide .tempContDiv .customCheckBox .cusChoiceSpan{
+     margin: 0 0 5px 15px;
+}
+.rtlWrapper .zfcheckbox.twoColumns .tempContDiv .customCheckBox .cusChoiceSpan{
+    margin: 0 0 13px 0;
+}
+.rtlWrapper .zfradio .customRadioBtn, .rtlWrapper .zfcheckbox .customCheckBox {
+    padding-right: 0;
+}
+.rtlWrapper .zfradio.twoColumns .tempContDiv .cusChoiceSpan .cusChoiceLabel {
+    float: none;
+    margin-left: 0 !important;
+    margin-right: 0px !important;
+}
+.rtlWrapper .zfradio.sideBySide .tempContDiv .cusChoiceSpan .cusChoiceLabel {
+    float: none;
+    margin-left: 0 !important;
+    margin-right: 0px !important;
+}
+.rtlWrapper .zfcheckbox.threeColumns .tempContDiv .customCheckBox .cusChoiceSpan {
+    margin: 0 0 13px 0;
+}
+.rtlWrapper .topAlign .decesion .customCheckBox .labelName {
+    margin-right: 0 !important;
+}
+.rtlWrapper .zfradio .tempContDiv .customRadioBtn .cusChoiceSpan .cusChoiceLabel {
+    float: none;
+}
+/* RTL Radio check ends here */
+.tempFrmWrapper.decesion .tempContDiv.customCheckBox {
+    padding-left: 2px;
+}
+.tempSubfrmWrapper .decesion .cusChoiceLabel {
+    margin-left: 40px !important;
+}
+.slider .slideActCont{
+	font-family: "Arimo", sans-serif !important; 
+	left: -19px;
+	background: rgba(0, 0, 0, 0.7);
+	padding: 4px 2px;
+}
+.slider .slideArrow{ 
+ 	background: none;
+	bottom: -3px;
+	left: 45%;
+	position: absolute;
+	opacity: .8;
+	width: 0;
+	height: 0;
+	border-left: 3px solid transparent;
+	border-right: 3px solid transparent;
+	border-top: 3px solid rgba(0, 0, 0, 0.8);
+}
+.uploadContainer input{
+	font-family: "Arimo", sans-serif !important; 
+}
+.merchantTypeWrapper a.selected {
+    border: 1px solid #24A68A !important;
+}
+.fieldDisabled .tempContDiv input[type="text"]:hover, .fieldDisabled .tempContDiv textarea:hover{
+	border: 1px solid #d2d2d2 !important;
+}
+.pmnt .disabledField input[type="text"]:hover{
+	border: 1px solid #d2d2d2 !important;
+}
+.tempContDiv .inputDisabled:hover{
+	border: 1px solid #d2d2d2 !important;
+}
+.tempContDiv input[type="text"].inputDisabled:hover{
+	border: 1px solid #d2d2d2 !important;
+}
+.fieldDisabled .uploadContainer:hover::before, .fieldDisabled .uploadContainer:focus::before, .fieldDisabled .uploadContainer:active::before {
+    border:1px dashed #d6d8d9 !important;
+}
+.fieldDisabled .uploadContainer .floatText a{ 
+	color: #494949 !important
+}
+.fieldDisabled .mSelect select:hover {
+	border: 1px solid #d2d2d2 !important;
+}
+.fieldDisabled .form_sBox:hover, .fieldDisabled .zf_selectbox:hover, .fieldDisabled .form_sBox, .fieldDisabled .zf_selectbox{
+	border: 1px solid #d2d2d2 !important
+}
+
+.pmnt .tempContDiv .pmtActionField .symbolBefore{
+	margin-top: 7px;
+}
+.currency .tempContDiv .symbolBefore{
+	margin-top: 9px;
+}
+
+.brandingWrapper .brandingTextCont a {
+	text-decoration: underline;
+	color: #24A68A !important;
+}
+
+
+/* IE6, IE7, IE8, but also IE9 */
+.form_sBox select {
+	padding: 3px 3px 4px 3px\9;
+}
+.time .form_sBox select {
+	padding: 4px 3px 4px 3px\9;
+}
+/* Save popup email template starts */
+.emailsaveBtn {
+	background: #24A68A;
+    border-color: #24A68A;
+}
+.saveandReswrap input[type="text"]:hover,.saveandReswrap textarea:hover {
+    border-color: #a5a5a5 !important;
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    box-shadow: none !important;
+}
+
+.saveandReswrap input[type="text"]:focus,.saveandReswrap textarea:focus {
+    border-color: #24A68A !important;
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    box-shadow: none !important;
+}
+
+
+/* Save popup email template ends */
